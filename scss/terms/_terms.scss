@@ -1,0 +1,86 @@
+// .terms-main-wrapper{
+// 	float: left;
+// 	width: 100%;
+// 	background-image: url('../../images/terms-bg.png');
+	
+// }
+.terms-main-wrapper{
+	padding-bottom: 100px;
+	position: relative;
+	.terms-bg{
+		img{
+			width: 100%;
+		}
+	}
+	.banner-flag{
+		position: relative;
+		z-index: 2;
+	}
+	.flag-left{
+		ul{
+			flex-direction: column;
+			li{
+				svg{
+					width: 100%;
+				}
+			}
+		}
+	}
+	.flag-right{
+		ul{
+			flex-direction: column;
+			li{
+				svg{
+					width: 100%;
+				}
+			}
+		}
+	}
+	.terms-content{
+    	margin: 0 auto;
+		.sb-terms-main-wrapper{
+			background-color: $color-white;
+			padding: 100px 150px !important;
+			h3{
+				padding-bottom: 50px;
+				line-height: 84px;
+				letter-spacing: 0.20000000298023224px;
+				text-align: center;
+			}
+			p{
+				font-size: $a-font-size;
+				font-weight: $font-weight2;
+				line-height: 30px;
+				letter-spacing: 0.30000001192092896px;
+				padding-bottom: 20px;
+			}
+			.privacy-list{
+				list-style-type: auto;
+				li{
+					font-weight: bold;
+					padding: 15px 15px 0;
+
+					ul{
+						list-style-type: upper-roman;
+						margin-left: -15px;
+						li{
+							font-weight: normal;
+							ul{
+								list-style-type: upper-alpha;
+								margin-left: 15px;
+								ul{
+									list-style-type: lower-roman;
+									ul{
+										list-style-type: lower-alpha;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	
+}

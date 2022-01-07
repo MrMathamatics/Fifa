@@ -1,0 +1,200 @@
+.cookies-modal{
+	top: auto;
+	bottom: 0;
+	height: auto;
+	.modal-dialog{
+		margin: 0 auto;
+		max-width: 827px;
+		.modal-content{
+			flex-direction: row;
+			padding: 50px;
+			.modal-body{
+				padding: 0;
+				max-width: 500px;
+				float: left;
+				h6{
+					font-size: $font-size-24;
+					font-weight: $font-weight1;
+					margin-bottom: 15px;
+				}
+				p{
+					font-size: $a-font-size;
+					font-weight: $font-weight2;
+				}
+			}
+			.modal-btn{
+				width: calc(100% - 500px);
+				float: left;
+				display: flex;
+			    flex-direction: column;
+			    justify-content: center;
+			    row-gap: 10px;
+			   	align-items: center;
+			    button{
+			    	width: 145px;
+			    	height: 48px;
+			    	background: $color-red;
+			    	border: none;
+			    	color: $color-white;
+			    	outline: none;
+			    	font-size: $font-xsmall;
+			    	font-weight: $font-weight1;
+			    }
+			    .decline-btn{
+			    	background: transparent;
+			    	color: #595959;
+			    	font-weight: $font-weight2;
+			    }
+			}
+		}
+	}
+}
+
+.contact-us-modal{
+	.modal-sm{
+		max-width: 476px;
+		margin: 35px auto;
+		.modal-content{
+			padding: 20px;
+			button{
+				float: right;
+			    width: 23px;
+			    padding: 0;
+			    border: none;
+			    outline: none;
+			    position: absolute;
+    			right: 20px;
+    			z-index: 2;
+			}
+			.modal-body{
+				padding: 1.7rem;
+				h6{
+					font-size: 28px;
+					font-weight: 600;
+					line-height: 38px;
+					color: #8A1538;
+					margin-bottom: 5px;
+				}
+				p{
+					font-size: 14px;
+					font-weight: 400;
+					line-height: 15px;
+					color: #595959;
+				}
+			}
+			.mian-contact-us{
+				padding: 1.7rem;
+				display: flex;
+				column-gap: 12px;
+				padding-top: 0;
+				.contact-us-box{
+					display: inline-block;
+    				width: 100%;
+    				padding: 15px;
+    				position: relative;
+    				z-index: 2;
+    				svg{
+    					margin-bottom: 28px;
+    					-webkit-transition: $transition;
+					    -o-transition: $transition;
+					    -ms-transition: $transition;
+					    -moz-transition: $transition;
+					    transition: $transition;
+    				}
+    				p{
+						font-size: 18px;
+						font-weight: 600;
+						line-height: 22px;
+						color: $color-black;
+						-webkit-transition: $transition;
+					    -o-transition: $transition;
+					    -ms-transition: $transition;
+					    -moz-transition: $transition;
+					    transition: $transition;
+    				}
+    				&:after{
+    					content: '';
+    					position: absolute;
+    					top: 0;
+    					left: 0;
+    					bottom: 0;
+    					right: 0;
+    					z-index: -1;
+    					transform: scale(.0);
+    					-webkit-transition: $transition;
+					    -o-transition: $transition;
+					    -ms-transition: $transition;
+					    -moz-transition: $transition;
+					    transition: $transition;
+    				}
+    				&:hover{
+    					svg{
+						    path{
+						    	stroke-color: #ffffff;
+						    	fill: #ffffff !important;
+						    }
+	    				}
+    					p{
+    						color: $color-white;
+    					}
+    					&:after{
+    						transform: scale(1);
+    					}
+    				}
+    				&.color-green{
+    					border: 2px solid $color-green;
+    					svg{
+						    path{
+						    	stroke-color: $color-green;
+						    	fill: $color-green;
+						    }
+	    				}
+    					&:after{
+    						background: $color-green;
+    					}
+    				}
+    				&.color-blue{
+    					border: 2px solid $color-blue;
+    					svg{
+						    path{
+						    	stroke-color: #1B76BC;
+						    	fill: #1B76BC;
+						    }
+	    				}
+    					&:after{
+    						background: $color-blue;
+    					}
+    				}
+				}
+			}
+		}
+	}
+}
+.save-popup-modal{
+	text-align: center;
+	.modal-sm{
+		max-width: 336px;
+		.modal-content{
+			.modal-body{
+				p{
+					font-size: 16px;
+					font-weight: 600;
+					line-height: 24px;
+					color: $color-black;
+				}
+			}
+			.common-btn{
+				width: 124px;
+				font-size: 14px;
+				margin: 0 auto;
+			}
+			.normal{
+				font-size: 14px;
+				font-weight: 400;
+				line-height: 22px;
+				color: $color-black;
+				padding: 30px 0;
+			}
+		}
+	}			
+}

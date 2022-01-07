@@ -1,0 +1,154 @@
+.fan-id-work-banner {
+  .how-fan-id-work {
+    width: calc(100% - 100px);
+    background-image: url(../images/fan-id-work-img.jpg);
+    padding: 166.2px 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    .container {
+      max-width: 1040px;
+    }
+    .fan-id-content {
+      width: 100%;
+      position: relative;
+      z-index: 2;
+      max-width: 660px;
+      float: right;
+      h2 {
+        font-size: $h5-font-size;
+        letter-spacing: -0.5px;
+        color: $color-white;
+        margin-bottom: 30px;
+      }
+      p {
+        font-size: $a-font-size;
+        font-weight: $font-weight2;
+        line-height: 30px;
+        color: $color-white;
+        max-width: 450px;
+      }
+      .banner-btn {
+        .fill-btn {
+          a {
+            background: #fcbe0b;
+            border-color: #fcbe0b;
+            color: $color-black;
+            &:after {
+              background: $color-black;
+            }
+            &:hover {
+              background: #ffcb33;
+              border-color: #ffcb33;
+            }
+          }
+        }
+      }
+    }
+  }
+  .team-flag {
+    width: 100px;
+    ul {
+      flex-direction: column;
+      flex-wrap: wrap-reverse;
+      li {
+        float: right;
+        width: fit-content;
+      }
+    }
+  }
+}
+.main-fan-id-work {
+  padding: 50px 0 120px;
+  .custem-container {
+    @media (min-width: 1200px) {
+      max-width: 1140px;
+    }
+  }
+  .main-fan-id-row {
+    padding: 100px 0;
+    overflow: hidden;
+    .fan-id-work-img {
+      svg {
+      }
+    }
+
+    .fan-id-work-text {
+      .heading {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        span {
+          display: inline-block;
+          height: 50px;
+          width: 50px;
+          float: left;
+          background: $color-green;
+          font-size: 24px;
+          font-weight: 600;
+          line-height: 50px;
+          letter-spacing: -0.5px;
+          text-align: center;
+          color: $color-white;
+          margin-right: 30px;
+        }
+        h2 {
+          width: calc(100% - 80px);
+          float: left;
+          font-size: $h6-font-size;
+          line-height: 36px;
+          letter-spacing: -0.5px;
+        }
+      }
+      p {
+        font-size: $a-font-size;
+        line-height: 30px;
+        letter-spacing: 0.30000001192092896px;
+        margin-top: 40px;
+        float: left;
+      }
+    }
+    &:nth-child(2) {
+      .fan-id-work-text {
+        .heading {
+          span {
+            background: $color-blue;
+          }
+        }
+      }
+    }
+    &:nth-child(3) {
+      .fan-id-work-text {
+        .heading {
+          span {
+            background: $color-red2;
+          }
+        }
+      }
+    }
+    &:nth-child(4) {
+      .fan-id-work-text {
+        .heading {
+          span {
+            background: $color-orange;
+          }
+        }
+      }
+    }
+  }
+  .apply-btn {
+    text-align: center;
+    p {
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 40px;
+      letter-spacing: 0.30000001192092896px;
+    }
+    ul {
+      li {
+        float: none;
+      }
+    }
+  }
+}

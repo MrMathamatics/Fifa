@@ -1,0 +1,274 @@
+.contact-head {
+  .contact-us-page {
+    background: $color-blue;
+    padding: 70px 0 110px;
+    position: relative;
+    z-index: 1;
+    .contact-color {
+    }
+    h2 {
+      line-height: 72px;
+      color: $color-white;
+      letter-spacing: 0.2px;
+    }
+    .heading-p {
+      font-size: $a-font-size;
+      color: $color-white;
+      line-height: 30px;
+      font-weight: $font-weight2;
+    }
+  }
+  .contact-icon {
+    background-color: $b-gray;
+    .location-main-box {
+      width: 100%;
+      float: left;
+      margin: -35px 0 0px;
+      background: $color-white;
+      padding: 30px;
+      //   display: flex;
+      //   justify-content: center;
+      //  column-gap: 60px;
+      z-index: 22;
+      .location-box {
+        flex-wrap: wrap;
+        .location-icon {
+          width: 50px;
+          float: left;
+          text-align: center;
+        }
+        .location-text {
+          width: calc(100% - 50px);
+          float: left;
+          padding-left: 15px;
+          text-align: left;
+          p {
+            font-size: 16px;
+            color: #000000;
+            .yellow{
+              color: #FFBF00
+            }
+            .green{
+              color: #007C3D
+            }
+          }
+        }
+      }
+    }
+  }
+  .contact-form {
+    background-color: $b-gray;
+    padding: 100px 0;
+    form {
+      .input-group {
+        width: 100%;
+        float: left;
+        margin-top: 10px;
+        text-align: left;
+        input,
+        textarea {
+          width: 100%;
+          height: 60px;
+          padding: 20px;
+          border: none;
+          outline: none !important;
+          border-radius: 0px !important;
+        }
+        textarea {
+          height: 200px;
+        }
+        .select {
+          width: 100%;
+          height: 60px;
+          position: relative;
+          .selectBtn {
+            padding: 0 20px;
+            width: 100%;
+            height: 100%;
+            line-height: 60px;
+            cursor: pointer;
+            position: relative;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            background: #fff;
+            border: none;
+            font-weight: normal;
+            color: #797979;
+            &:after {
+              content: "";
+              position: absolute;
+              top: 48%;
+              right: 24px;
+              width: 10px;
+              height: 10px;
+              -webkit-transform: translateY(-50%) rotate(45deg);
+              transform: translateY(-50%) rotate(45deg);
+              border-right: 2px solid #000;
+              border-bottom: 2px solid #000;
+              transition: 0.2s ease;
+            }
+            &:before {
+              content: "";
+              position: absolute;
+              top: 5px;
+              right: 5px;
+              bottom: 5px;
+              width: 50px;
+              background: #ffbf00;
+              height: auto;
+              transform: translate(0px, 0px);
+            }
+          }
+          .selectBtn.toggle {
+            border-radius: 3px 3px 0 0;
+            &:after {
+              -webkit-transform: translateY(-50%) rotate(-135deg);
+              transform: translateY(-50%) rotate(-135deg);
+            }
+          }
+          .selectDropdown {
+            position: absolute;
+            top: 100%;
+            width: 100%;
+            border-radius: 0 0 3px 3px;
+            overflow: hidden;
+            background: var(--bg1);
+            z-index: 1;
+            background: #fff;
+            -webkit-transform: scale(1, 0);
+            transform: scale(1, 0);
+            -webkit-transform-origin: top center;
+            transform-origin: top center;
+            visibility: hidden;
+            transition: 0.2s ease;
+            box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+            .option {
+              padding: 10px;
+              box-sizing: border-box;
+              cursor: pointer;
+              color: #797979;
+              &:hover {
+                background: #ffbf003b;
+              }
+            }
+          }
+          .selectDropdown.toggle {
+            visibility: visible;
+            -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+          }
+        }
+        button {
+          height: 60px;
+          text-align: center;
+          line-height: 60px;
+          font-weight: 600;
+          font-size: 18px;
+          color: $color-white;
+          background: #8a1538;
+          border: 2px solid #8a1538;
+          width: 100%;
+          position: relative;
+          z-index: 2;
+          &:after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            -webkit-transform: scaleX(0.3);
+            transform: scaleX(0.3);
+            z-index: -1;
+            opacity: 0;
+            transition: all 0.3s;
+            background: $b-gray;
+          }
+          &:hover {
+            background: darken($color-red, 5%);
+            border-color: darken($color-red, 5%);
+            color: $color-white;
+          }
+        }
+      }
+      .capcha-group {
+        .capcha-img {
+          float: left;
+          margin-right: 10px;
+          img {
+            // background: $color-white;
+          }
+        }
+        input {
+          width: calc(100% - 80px);
+          float: left;
+        }
+      }
+      .phone-group {
+        .code-phone {
+          width: 130px;
+          float: left;
+        }
+        input {
+          width: calc(100% - 130px);
+          float: left;
+        }
+      }
+    }
+  }
+}
+
+@keyframes line {
+  0% {
+    background-position: 1% 0%;
+  }
+  50% {
+    background-position: 99% 100%;
+  }
+  100% {
+    background-position: 1% 0%;
+  }
+}
+.location-box {
+  .location-icon-show {
+    position: relative;
+    &:after {
+      position: absolute;
+      content: "";
+      left: -40%;
+      top: 50%;
+      transform: translate(50%, -50%) rotate(45deg);
+      width: 10px;
+      height: 10px;
+      background: #bcbcbc;
+      z-index: 1;
+      border-radius: 20px;
+    }
+  }
+}
+
+.g-recaptcha {
+  div {
+    width: 100% !important;
+    div {
+      iframe {
+        width: 100% !important;
+        document {
+          html {
+            body {
+              background-color: blue;
+              div {
+                width: 100% !important;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+#rc-anchor-container {
+  width: 100% !important;
+}
